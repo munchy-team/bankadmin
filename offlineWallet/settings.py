@@ -88,10 +88,16 @@ WSGI_APPLICATION = 'offlineWallet.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dtnh4nvdquj0i', 
+        'USER': 'isbnywanuypzky',
+        'PASSWORD': '27aae774071cc4fa04dcc84de177464f07cf24ebb54b50ae888392cfb8222f3f',
+
+        'HOST': 'ec2-52-72-56-59.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
