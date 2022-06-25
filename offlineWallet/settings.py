@@ -27,7 +27,7 @@ SECRET_KEY = 'igl7azsnqq#dwy1svzvk)2sbq0z=62-c-#jei-b(&sm46s%h!i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["admin-munchybank.herokuapp.com"]
 
 
 # Application definition
