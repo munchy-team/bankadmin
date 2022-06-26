@@ -19,7 +19,8 @@ from django.urls import path,include
 #from .views import profile
 from django.contrib import admin
 from . import views
-from .views import home1
+from .views import *
+
 
 admin.site.site_header = "MunchyBank V4 | MunchyTeam"
 
@@ -31,5 +32,6 @@ urlpatterns = [
    # path('test/', views.transaction, name='test1'),
     path('bankadmin1234/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('', home1)
+    path('', home1),
+    path('admin/', admintrap)
 ]

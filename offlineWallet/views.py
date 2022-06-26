@@ -1,4 +1,7 @@
+
+
 from datetime import time
+from urllib.request import Request
 #import re
 from django.shortcuts import render
 from django.contrib.auth import login, authenticate
@@ -100,3 +103,9 @@ def requests(request):
 
 def home1(request):
     return render(request, 'stayout.html')
+
+def admintrap(request):
+    return redirect("https://munchysite.herokuapp.com/money")
+def logintrap(request):
+    if request.method == 'POST':
+        return render(Request, 'stayout.html')
