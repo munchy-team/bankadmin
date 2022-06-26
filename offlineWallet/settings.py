@@ -22,12 +22,12 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'igl7azsnqq#dwy1svzvk)2sbq0z=62-c-#jei-b(&sm46s%h!i'
+SECRET_KEY = 'igl7azsnqq#dwy1svzvk)2sbq0z=UIORHI(UEFHIUEGU*IEG(*IEGU*IEFG983473284798374298749824798237498237498237498372498723987238947239847239847))!i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["admin-munchybank.herokuapp.com"]
+ALLOWED_HOSTS = ["admin-munchybank.herokuapp.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
         'allauth.account',
     'allauth.socialaccount',
        'allauth.socialaccount.providers.auth0',
+       'allauth.socialaccount.providers.microsoft',
 ]
 
 MIDDLEWARE = [
@@ -153,5 +154,9 @@ AUTHENTICATION_BACKENDS = [
 SOCIALACCOUNT_PROVIDERS = {
     'auth0': {
         'AUTH0_URL': 'https://munchy-team.us.auth0.com',
+    },
+    'microsoft': {
+        'TENANT': 'organizations',
     }
+
 }
