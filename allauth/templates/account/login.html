@@ -18,7 +18,7 @@
 <p>
     {% blocktrans with site.name as site_name %}Please sign in with one
     of your existing third party accounts.
-    <!-- Or, <a href="{{ signup_url }}">sign up</a>
+    <!-- Or, <a href=" 'inside href goes double curly braces & "signup_url' ">sign up</a> #inside href goes double curly braces & "signup_url"
     for a  account and -->
     Sign in to {{ site_name }} below:{% endblocktrans %}
 </p>
@@ -37,8 +37,10 @@
 
 {% else %}
 <p>
-    {% blocktrans %} <!--If you have not created an account yet, then please
-    <a href="{{ signup_url }}">sign up</a> first. -->{% endblocktrans %}
+    {% blocktrans %}
+    <!--If you have not created an account yet, then please
+    <a href=" 'inside href goes double curly braces & "signup_url' ">sign up</a> first. -->
+    {% endblocktrans %}
 </p>
 {% endif %}
 
