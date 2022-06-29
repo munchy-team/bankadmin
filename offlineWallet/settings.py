@@ -25,7 +25,7 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 SECRET_KEY = 'igl7azsnqq#dwy1svzvk)2sbq0z=UIORHI(UEFHIUEGU*IEG(*IEGU*IEFG983473284798374298749824798237498237498237498372498723987238947239847239847))!i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["admin-munchybank.herokuapp.com", "127.0.0.1", "localhost"]
 
@@ -139,8 +139,8 @@ SITE_ID = 2
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles")]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static-collected')
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles")]
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static-collected')
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
