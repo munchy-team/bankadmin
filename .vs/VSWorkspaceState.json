@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\allauth",
+    "\\allauth\\account",
+    "\\allauth\\accounts\\login",
+    "\\allauth\\templates",
+    "\\allauth\\templates\\account",
+    "\\offlineWallet",
+    "\\Templates"
   ],
+  "SelectedNode": "\\allauth\\account\\utils.py",
   "PreviewInSolutionExplorer": false
 }
