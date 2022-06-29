@@ -20,6 +20,8 @@ from django.urls import path,include
 from django.contrib import admin
 from . import views
 from .views import *
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 admin.site.site_header = "MunchyBank V4 | MunchyTeam"
