@@ -173,15 +173,13 @@ class LoginView(
 
     def get_context_data(self, **kwargs):
         ret = super(LoginView, self).get_context_data(**kwargs)
-        signup_url = passthrough_next_redirect_url(
-            self.request, reverse("account_signup"), self.redirect_field_name
-        )
+       
         redirect_field_value = get_request_param(self.request, self.redirect_field_name)
         site = get_current_site(self.request)
 
         ret.update(
             {
-                "signup_url": signup_url,
+                
                 "site": site,
                 "redirect_field_name": self.redirect_field_name,
                 "redirect_field_value": redirect_field_value,
