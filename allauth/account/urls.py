@@ -4,7 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path("bankmunchyteammunchybankv4superuseronly_signup/", views.signup, name="account_signup"),
     path("login/", views.login, name="account_login"),
     path("logout/", views.logout, name="account_logout"),
     path(
