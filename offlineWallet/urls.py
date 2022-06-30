@@ -17,7 +17,6 @@ Including another URLconf
 from django.urls import path,include
 #from accounts.views import profile,login1,transaction
 #from .views import profile
-from django.contrib import admin
 from . import views
 from .views import *
 from django.conf import settings
@@ -32,7 +31,7 @@ urlpatterns = [
     
 
    # path('test/', views.transaction, name='test1'),
-    path('bankadmin1234/', admin.site.urls),
+    
     path('accounts/', include('allauth.urls')),
     path('', home1),
     path('admin/', admintrap)
